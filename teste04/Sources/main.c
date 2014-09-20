@@ -30,18 +30,19 @@
 /* Including needed modules to compile this module/procedure */
 #include "Cpu.h"
 #include "Events.h"
+#include "BBA1.h"
+#include "Bit1.h"
+#include "Bit2.h"
+#include "Bit3.h"
+#include "AS1.h"
+#include "ASerialLdd1.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
 #include "IO_Map.h"
 /* User includes (#include below this line is not maintained by Processor Expert) */
-void delay (unsigned short int atraso);
-void delay (unsigned short int atraso)
-{
-	unsigned short int contador = 0;
-	for (contador=0;contador<atraso;contador++);
-}
+
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
@@ -53,41 +54,6 @@ int main(void)
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
-	SIM_SCGC5 |= SIM_SCGC5_PORTB_MASK;
-	SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK;
-
-
-	//Data Direction para os LEDs
-	GPIOB_PDDR |= (1<<18);	// Configura o bit 18 como output (1) Vermelho
-	GPIOB_PDDR |= (1<<19);	// Configura o bit 19 como output (1) Verde
-	GPIOD_PDDR |= (1<<1);	// Configura o bit 1 como output (1)  Azul
-  /* For example: for(;;) { } */
-    for (;;) {
-        GPIOB_PCOR = (1<<18);	// liga (PSOR) vermelho
-        GPIOB_PSOR = (1<<19);	// desliga (PTOR) Verde
-        GPIOD_PSOR = (1<<1);	// desliga (PTOR) Azul
-        delay (1000);
-
-        GPIOB_PSOR = (1<<18);	// desliga (PSOR) vermelho
-        GPIOB_PCOR = (1<<19);	// liga (PTOR) Verde
-        GPIOD_PSOR = (1<<1);	// desliga (PTOR) Azul
-        delay (1000);
-
-        GPIOB_PSOR = (1<<18);	// desliga (PSOR) vermelho
-        GPIOB_PSOR = (1<<19);	// desliga (PTOR) Verde
-        GPIOD_PCOR = (1<<1);	// liga (PTOR) Azul
-        delay (1000);
-
-        GPIOB_PTOR = (1<<18);
-        GPIOB_PTOR = (1<<19);
-        GPIOD_PTOR = (1<<1);
-        delay (1000000);
-
-        GPIOB_PTOR = (1<<18);
-        GPIOB_PTOR = (1<<19);
-        GPIOD_PTOR = (1<<1);
-        delay (1000000);
-    }
 
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
