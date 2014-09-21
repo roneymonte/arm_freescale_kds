@@ -5,7 +5,7 @@
 **     Processor   : MKL25Z128VLK4
 **     Version     : Component 01.025, Driver 01.04, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-09-20, 21:10, # CodeGen: 1
+**     Date/Time   : 2014-09-20, 21:27, # CodeGen: 2
 **     Abstract    :
 **
 **     Settings    :
@@ -60,8 +60,6 @@
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
-#include "AS1.h"
-#include "ASerialLdd1.h"
 #include "AZUL.h"
 #include "VERDE.h"
 #include "VERMELHO.h"

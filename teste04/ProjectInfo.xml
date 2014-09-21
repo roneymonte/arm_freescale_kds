@@ -50,8 +50,6 @@
   </PATHS>
   <FILES>
     <GeneratedCs>
-      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\AS1.c</PathName>
-      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\ASerialLdd1.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\AZUL.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\BBA1.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Bit1.c</PathName>
@@ -70,8 +68,6 @@
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Sources\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
-      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\AS1.h</PathName>
-      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\ASerialLdd1.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\AZUL.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\BBA1.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Bit1.h</PathName>

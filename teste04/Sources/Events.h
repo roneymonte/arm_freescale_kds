@@ -38,8 +38,6 @@
 #include "Bit1.h"
 #include "Bit2.h"
 #include "Bit3.h"
-#include "AS1.h"
-#include "ASerialLdd1.h"
 #include "AZUL.h"
 #include "VERDE.h"
 #include "VERMELHO.h"

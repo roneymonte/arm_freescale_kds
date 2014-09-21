@@ -7,7 +7,7 @@
 **     Version     : Component 01.025, Driver 01.04, CPU db: 3.00.000
 **     Datasheet   : KL25P80M48SF0RM, Rev.3, Sep 2012
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-09-20, 21:10, # CodeGen: 1
+**     Date/Time   : 2014-09-20, 21:27, # CodeGen: 2
 **     Abstract    :
 **
 **     Settings    :
@@ -82,13 +82,13 @@ extern "C" {
 /* Events configuration constants - generated for all enabled component's events */
 #define Cpu_OnNMIINT_EVENT_ENABLED
 
-#define CPU_BUS_CLK_HZ                  20971520U /* Initial value of the bus clock frequency in Hz */
-#define CPU_CORE_CLK_HZ                 20971520U /* Initial value of the core/system clock frequency in Hz.  */
+#define CPU_BUS_CLK_HZ                  1310720U /* Initial value of the bus clock frequency in Hz */
+#define CPU_CORE_CLK_HZ                 1310720U /* Initial value of the core/system clock frequency in Hz.  */
 
 #define CPU_CLOCK_CONFIG_NUMBER         0x01U /* Specifies number of defined clock configurations. */
 
-#define CPU_BUS_CLK_HZ_CLOCK_CONFIG0    20971520U /* Value of the bus clock frequency in the clock configuration 0 in Hz. */
-#define CPU_CORE_CLK_HZ_CLOCK_CONFIG0   20971520U /* Value of the core/system clock frequency in the clock configuration 0 in Hz. */
+#define CPU_BUS_CLK_HZ_CLOCK_CONFIG0    1310720U /* Value of the bus clock frequency in the clock configuration 0 in Hz. */
+#define CPU_CORE_CLK_HZ_CLOCK_CONFIG0   1310720U /* Value of the core/system clock frequency in the clock configuration 0 in Hz. */
 
 
 #define CPU_INT_SLOW_CLK_HZ             32768U /* Value of the slow internal oscillator clock frequency in Hz  */
@@ -101,8 +101,8 @@ extern "C" {
 
 /* CPU frequencies in clock configuration 0 */
 #define CPU_CLOCK_CONFIG_0              0x00U /* Clock configuration 0 identifier */
-#define CPU_CORE_CLK_HZ_CONFIG_0        20971520UL /* Core clock frequency in clock configuration 0 */
-#define CPU_BUS_CLK_HZ_CONFIG_0         20971520UL /* Bus clock frequency in clock configuration 0 */
+#define CPU_CORE_CLK_HZ_CONFIG_0        1310720UL /* Core clock frequency in clock configuration 0 */
+#define CPU_BUS_CLK_HZ_CONFIG_0         1310720UL /* Bus clock frequency in clock configuration 0 */
 #define CPU_FLEXBUS_CLK_HZ_CONFIG_0     0UL /* Flexbus clock frequency in clock configuration 0 */
 #define CPU_FLASH_CLK_HZ_CONFIG_0       0UL /* FLASH clock frequency in clock configuration 0 */
 #define CPU_USB_CLK_HZ_CONFIG_0         0UL /* USB clock frequency in clock configuration 0 */
