@@ -35,48 +35,60 @@
     <FLASHsize>128k</FLASHsize>
   </PROCESSOR>
   <PATHS>
-    <LinkerCommandFile>C:\Users\Roney\git\arm_freescale_kds\teste04\Project_Settings\Linker_Files\ProcessorExpert.ld</LinkerCommandFile>
+    <LinkerCommandFile>C:\Users\roney\git\arm_freescale_kds\teste04\Project_Settings\Linker_Files\ProcessorExpert.ld</LinkerCommandFile>
     <IncludePaths>
       <Path>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\</Path>
       <Path>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\iofiles\</Path>
-      <Path>C:\Users\Roney\git\arm_freescale_kds\teste04\Sources\</Path>
-      <Path>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\</Path>
+      <Path>C:\Users\roney\git\arm_freescale_kds\teste04\Sources\</Path>
+      <Path>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\</Path>
     </IncludePaths>
     <SourceCodePaths>
-      <Path>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\</Path>
-      <Path>C:\Users\Roney\git\arm_freescale_kds\teste04\Project_Settings\Startup_Code\</Path>
-      <Path>C:\Users\Roney\git\arm_freescale_kds\teste04\Sources\</Path>
+      <Path>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\</Path>
+      <Path>C:\Users\roney\git\arm_freescale_kds\teste04\Project_Settings\Startup_Code\</Path>
+      <Path>C:\Users\roney\git\arm_freescale_kds\teste04\Sources\</Path>
     </SourceCodePaths>
   </PATHS>
   <FILES>
     <GeneratedCs>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\AS1.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\ASerialLdd1.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\BBA1.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\Bit1.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\Bit2.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\Bit3.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\Cpu.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\PE_LDD.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\Vectors.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Project_Settings\Startup_Code\startup.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Sources\Events.c</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Sources\main.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\AS1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\ASerialLdd1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\AZUL.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\BBA1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Bit1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Bit2.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Bit3.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Cpu.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\PE_LDD.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TI1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TU1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TimerIntLdd1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\VERDE.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\VERMELHO.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Vectors.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Project_Settings\Startup_Code\startup.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Sources\Events.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Sources\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\AS1.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\ASerialLdd1.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\BBA1.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\Bit1.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\Bit2.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\Bit3.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\Cpu.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\IO_Map.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\PE_Const.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\PE_Error.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\PE_LDD.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Generated_Code\PE_Types.h</PathName>
-      <PathName>C:\Users\Roney\git\arm_freescale_kds\teste04\Sources\Events.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\AS1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\ASerialLdd1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\AZUL.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\BBA1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Bit1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Bit2.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Bit3.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Cpu.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\IO_Map.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\PE_Const.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\PE_Error.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\PE_LDD.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\PE_Types.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TI1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TU1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TimerIntLdd1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\VERDE.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\VERMELHO.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Sources\Events.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\iofiles\MKL25Z4.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\ADC_PDD.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\CMP_PDD.h</PathName>
