@@ -12,3 +12,5 @@ Para utilizar a rotina de WAIT1_Waitms(...) fiz a importacao dos componentes do 
 Simples e rapido para ser construido.
 
 Utilizando KDS 1.1.1 no Win7.
+
+23SET2014 - checkout no Git View do KDS 1.1.1 - Win7 - Sao Paulo
