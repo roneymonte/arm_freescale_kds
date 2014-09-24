@@ -33,7 +33,9 @@
       <File Name="Generated_Code/System/CPU_Init.c" FileDate="2014-03-04, 17:59:26" FileAge="1393966766000" FileType="262144" />
       <File Name="Sources/Events.h" FileDate="2014-09-23, 12:47:27" FileAge="1411487247200" FileType="131328" />
       <File Name="Sources/Events.c" FileDate="2014-09-23, 12:47:27" FileAge="1411487247207" FileType="131328" />
+      <File Name="External_Modules/startup.c" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="16384" />
       <File Name="Generated_Code/PDD/USB_PDD.h" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
+      <File Name="External_Modules/pex.css" FileDate="2013-09-23, 15:52:22" FileAge="1379962342000" FileType="16384" />
       <File Name="Generated_Code/PDD/FMC_PDD.h" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
       <File Name="Generated_Code/PE_Types.h" FileDate="2014-09-23, 12:47:27" FileAge="1411487247082" FileType="45637" />
       <File Name="Generated_Code/PDD/SMC_PDD.h" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
@@ -42,9 +44,7 @@
       <File Name="Generated_Code/PE_LDD.c" FileDate="2014-09-23, 12:47:27" FileAge="1411487247119" FileType="45637" CompNumb="1" />
       <File Name="Generated_Code/PDD/RCM_PDD.h" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
       <File Name="Generated_Code/PDD/USBDCD_PDD.h" FileDate="2014-01-13, 15:52:50" FileAge="1389635570000" FileType="262144" />
-      <File Name="Project_Settings/Startup_Code/startup.c" FileDate="2014-09-23, 12:34:09" FileAge="1411486449024" FileType="16384" CompNumb="1" />
       <File Name="Generated_Code/PDD/RNGA_PDD.h" FileDate="2014-01-13, 15:52:50" FileAge="1389635570000" FileType="262144" />
-      <File Name="Documentation/doxygen/pex.css" FileDate="2014-09-23, 12:34:08" FileAge="1411486448025" FileType="16384" CompNumb="1" />
       <File Name="Generated_Code/System/Vectors.c" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
       <File Name="Generated_Code/PDD/PDD_Types.h" FileDate="2013-09-23, 15:52:22" FileAge="1379962342000" FileType="262144" />
       <File Name="Generated_Code/PE_Const.h" FileDate="2014-09-23, 12:34:09" FileAge="1411486449445" FileType="45637" />
@@ -59,7 +59,7 @@
       <File Name="Generated_Code/System/PDD_Includes.h" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
       <File Name="Generated_Code/pin_mux.c" FileDate="2014-09-23, 12:34:09" FileAge="1411486449460" FileType="45637" CompNumb="2" />
       <File Name="Generated_Code/IO_Map/MK64F12.h" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
-      <File Name="Project_Settings/Linker_Files/ProcessorExpert.ld" FileDate="2014-09-23, 12:34:09" FileAge="1411486449429" FileType="8" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.ld" FileDate="2014-09-23, 12:34:09" FileAge="1411486449429" FileType="8" CompNumb="1" />
       <File Name="Documentation/teste07_Settings.xml" FileDate="2014-09-23, 12:47:27" FileAge="1411487247377" FileType="3072" />
       <File Name="Generated_Code/PDD/SAI_PDD.h" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
       <File Name="Documentation/doxygen/RoutingReport.txt" FileDate="2014-09-23, 12:34:09" FileAge="1411486449382" FileType="45637" CompNumb="1" />
@@ -81,12 +81,10 @@
       <File Name="Generated_Code/PE_Error.h" FileDate="2014-09-23, 12:34:09" FileAge="1411486449445" FileType="45637" />
       <File Name="Generated_Code/Cpu.h" FileDate="2014-09-23, 12:47:27" FileAge="1411487247097" FileType="45637" CompNumb="1" />
       <File Name="Generated_Code/System/Peripherals_Init.c" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
-      <File Name="Generated_Code/MQX1.h" FileDate="2014-09-23, 12:47:26" FileAge="1411487246974" FileType="45637" CompNumb="5" />
       <File Name="Generated_Code/Cpu.c" FileDate="2014-09-23, 12:47:27" FileAge="1411487247108" FileType="45637" CompNumb="1" />
-      <File Name="Generated_Code/MQX1.c" FileDate="2014-09-23, 12:47:26" FileAge="1411487246970" FileType="45637" CompNumb="5" />
       <File Name="Generated_Code/PDD/PMC_PDD.h" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
       <File Name="Generated_Code/PDD/PDB_PDD.h" FileDate="2014-02-28, 14:07:24" FileAge="1393607244000" FileType="262144" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>2</CodeGenReference>
+  <CodeGenReference>3</CodeGenReference>
 </CodeGenerationInfo>

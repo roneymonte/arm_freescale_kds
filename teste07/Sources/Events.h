@@ -35,7 +35,7 @@
 #include "PE_Const.h"
 #include "IO_Map.h"
 #include "pin_mux.h"
-#include "MQX1.h"
+
 
 #ifdef __cplusplus
 extern "C" {

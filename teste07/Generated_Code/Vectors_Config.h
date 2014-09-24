@@ -50,7 +50,6 @@
   
 #include "Cpu.h"
 #include "pin_mux.h"
-#include "MQX1.h"
 #include "Events.h"
 
 #ifdef __cplusplus

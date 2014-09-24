@@ -55,7 +55,6 @@
 #include "PE_Error.h"
 #include "PE_Const.h"
 #include "pin_mux.h"
-#include "MQX1.h"
 
 
 /*

@@ -63,8 +63,6 @@
 
 /* MODULE Cpu. */
 
-#include "mqx.h"
-#include "ioctl.h"
 #include "Cpu.h"
 #include "Events.h"
 #include "Init_Config.h"

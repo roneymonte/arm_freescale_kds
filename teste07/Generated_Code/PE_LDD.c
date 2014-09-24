@@ -49,9 +49,6 @@
 
 /* MODULE PE_LDD. */
 
-#include "mqx.h"
-#include "ioctl.h"
-
 #include "PE_LDD.h"
 #include "Cpu.h"
 
