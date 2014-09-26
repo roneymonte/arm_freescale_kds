@@ -6,7 +6,7 @@
 **     Component   : BitIO_LDD
 **     Version     : Component 01.033, Driver 01.03, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-09-20, 21:10, # CodeGen: 1
+**     Date/Time   : 2014-09-20, 21:48, # CodeGen: 6
 **     Abstract    :
 **         The HAL BitIO component provides a low level API for unified
 **         access to general purpose digital input/output pins across
@@ -27,6 +27,7 @@
 **     Contents    :
 **         Init   - LDD_TDeviceData* VERDE_Init(LDD_TUserData *UserDataPtr);
 **         Deinit - void VERDE_Deinit(LDD_TDeviceData *DeviceDataPtr);
+**         NegVal - void VERDE_NegVal(LDD_TDeviceData *DeviceDataPtr);
 **
 **     Copyright : 1997 - 2014 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -77,7 +78,7 @@
 
 /* MODULE VERDE. */
 
-/* {Default RTOS Adapter} No RTOS includes */
+/* {Bareboard RTOS Adapter} No RTOS includes */
 #include "VERDE.h"
 
 #ifdef __cplusplus
@@ -161,7 +162,27 @@ void VERDE_Deinit(LDD_TDeviceData *DeviceDataPtr)
   /* Unregistration of the device structure */
   PE_LDD_UnregisterDeviceStructure(PE_LDD_COMPONENT_VERDE_ID);
   /* Deallocation of the device structure */
-  /* {Default RTOS Adapter} Driver memory deallocation: Dynamic allocation is simulated, no deallocation code is generated */
+  /* {Bareboard RTOS Adapter} Driver memory deallocation: Dynamic allocation is simulated, no deallocation code is generated */
+}
+
+/*
+** ===================================================================
+**     Method      :  VERDE_NegVal (component BitIO_LDD)
+*/
+/*!
+**     @brief
+**         Negates (inverts) the output value. It is equivalent to the
+**         [PutVal(!GetVal())]. This method is available only if the
+**         direction = _[output]_ or _[input/output]_.
+**     @param
+**         DeviceDataPtr   - Pointer to device data
+**                           structure returned by <Init> method.
+*/
+/* ===================================================================*/
+void VERDE_NegVal(LDD_TDeviceData *DeviceDataPtr)
+{
+  (void)DeviceDataPtr;                 /* Parameter is not used, suppress unused argument warning */
+  GPIO_PDD_TogglePortDataOutputMask(VERDE_MODULE_BASE_ADDRESS, VERDE_PORT_MASK);
 }
 
 /* END VERDE. */

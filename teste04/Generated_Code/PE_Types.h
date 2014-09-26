@@ -6,7 +6,7 @@
 **     Component   : PE_Types
 **     Version     : Driver 01.01
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-09-20, 21:27, # CodeGen: 2
+**     Date/Time   : 2014-09-20, 21:47, # CodeGen: 4
 **     Abstract    :
 **         PE_Types.h - contains definitions of basic types,
 **         register access macros and hardware specific macros
@@ -206,8 +206,6 @@ typedef unsigned long int       uint32;
 #define PE_LDD_COMPONENT_AZUL_ID                 0x00U
 #define PE_LDD_COMPONENT_VERDE_ID                0x01U
 #define PE_LDD_COMPONENT_VERMELHO_ID             0x02U
-#define PE_LDD_COMPONENT_TU1_ID                  0x03U
-#define PE_LDD_COMPONENT_TimerIntLdd1_ID         0x04U
 
 /*
 ** ===================================================================
@@ -248,7 +246,7 @@ extern void PE_FillMemory(register void* SourceAddressPtr, register uint8_t c, r
 ** RTOS specific types and constants
 ** ===================================================================
 */
-/* {Default RTOS Adapter} RTOS specific definition of type of Ioctl() command constants */
+/* {Bareboard RTOS Adapter} RTOS specific definition of type of Ioctl() command constants */
 
 
 /*
@@ -256,7 +254,7 @@ extern void PE_FillMemory(register void* SourceAddressPtr, register uint8_t c, r
 ** Published RTOS settings and constants
 ** ===================================================================
 */
-/* {Default RTOS Adapter} No published RTOS settings */
+/* {Bareboard RTOS Adapter} No published RTOS settings */
 
 
 /*

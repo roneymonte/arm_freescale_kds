@@ -23,12 +23,12 @@
           <list name="Clock source settings" v="1">
             <group name="Clock source setting 0">
               <group name="Internal reference clock">
-                <MCGIRCLK_clock v="Disabled" />
+                <MCGIRCLK_clock v="Enabled" />
                 <MCGIRCLK_in_stop v="Disabled" />
                 <enumgroup name="MCGIRCLK source" v="Slow">
                   <EmptySection_DummyValue />
                 </enumgroup>
-                <MCGIRCLK_clock__MHz_ v="0" />
+                <MCGIRCLK_clock__MHz_ v="0.032768000000" />
               </group>
               <group name="External reference clock">
                 <OSC0ERCLK_clock v="Enabled" />
@@ -234,16 +234,16 @@
           <enumgroup name="Clock source setting" v="configuration 0">
             <MCG_mode v="FEI" />
             <MCG_output__MHz_ v="20.971520000000" />
-            <MCGIRCLK_clock__MHz_ v="0" />
+            <MCGIRCLK_clock__MHz_ v="0.032768" />
             <OSCERCLK_clock__MHz_ v="0" />
             <ERCLK32K__clock__MHz_ v="0.001" />
             <MCGFFCLK__kHz_ v="32.768" />
           </enumgroup>
           <group name="System clocks">
             <Core_clock_prescaler v="Auto select" />
-            <Core_clock v="1.310720000000" />
+            <Core_clock v="20.971520000000" />
             <Bus_clock_prescaler v="Auto select" />
-            <Bus_clock v="1.310720000000" />
+            <Bus_clock v="20.971520000000" />
             <enumgroup name="PLL/FLL clock selection" v="Auto select">
               <Clock_frequency__MHz_ v="20.971520000000" />
             </enumgroup>
@@ -408,7 +408,7 @@ PE_DEBUGHALT();
       <PutVal v="don&amp;apos;t generate code" />
       <ClrVal v="don&amp;apos;t generate code" />
       <SetVal v="don&amp;apos;t generate code" />
-      <NegVal v="don&amp;apos;t generate code" />
+      <NegVal v="generate code" />
       <ConnectPin v="don&amp;apos;t generate code" />
       <GetRawVal v="don&amp;apos;t generate code" />
     </Methods>
@@ -449,209 +449,26 @@ PE_DEBUGHALT();
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="TI1" type="TimerInt">
+  <Bean name="BBA1" type="Bareboard">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="TI1" />
-      <Periodic_interrupt_source v="LPTMR0_CMR" />
-      <Counter v="LPTMR0_CNR" />
-      <boolgroup name="Interrupt service/event" v="Enabled">
-        <Interrupt v="INT_LPTimer" />
-        <Interrupt_priority v="medium priority" />
-      </boolgroup>
-      <Interrupt_period v="1 sec" />
-      <Same_period_in_modes v="yes" />
-      <Component_uses_entire_timer v="no" />
-      <group name="Initialization">
-        <Enabled_in_init__code v="yes" />
-        <Events_enabled_in_init_ v="yes" />
-      </group>
-      <group name="CPU clock/speed selection">
-        <High_speed_mode v="This component enabled" />
-        <Low_speed_mode v="This component disabled" />
-        <Slow_speed_mode v="This component disabled" />
-      </group>
-      <group name="Referenced components">
-        <inhrbean type="TimerInt_LDD">
-          <Enabled v="Y" />
-          <Properties>
-            <Component_name v="TimerIntLdd1" />
-            <Periodic_interrupt_source v="LPTMR0_CMR" />
-            <Counter v="LPTMR0_CNR" />
-            <boolgroup name="Interrupt service/event" v="Enabled">
-              <Interrupt v="INT_LPTimer" />
-              <Interrupt_priority v="medium priority" />
-            </boolgroup>
-            <Interrupt_period v="1 sec" />
-            <group name="Initialization">
-              <Enabled_in_init__code v="yes" />
-              <list name="Auto Initialization" v="1">
-                <Auto_initialization v="yes" />
-              </list>
-              <group name="Event mask">
-                <OnInterrupt v="Enabled" />
-              </group>
-            </group>
-            <list name="CPU clock/configuration selection (included)" v="1">
-              <group name="CPU clock/configuration selection">
-                <Clock_configuration_0 v="This component enabled" />
-                <Clock_configuration_1 v="This component disabled" />
-                <Clock_configuration_2 v="This component disabled" />
-                <Clock_configuration_3 v="This component disabled" />
-                <Clock_configuration_4 v="This component disabled" />
-                <Clock_configuration_5 v="This component disabled" />
-                <Clock_configuration_6 v="This component disabled" />
-                <Clock_configuration_7 v="This component disabled" />
-              </group>
-            </list>
-            <group name="Referenced components">
-              <Linked_TimerUnit v="TU1" />
-            </group>
-          </Properties>
-          <Methods>
-            <Init v="generate code" />
-            <Deinit v="don&amp;apos;t generate code" />
-            <Enable v="don&amp;apos;t generate code" />
-            <Disable v="don&amp;apos;t generate code" />
-            <SetEventMask v="don&amp;apos;t generate code" />
-            <GetEventMask v="don&amp;apos;t generate code" />
-            <GetEventStatus v="don&amp;apos;t generate code" />
-            <SelectPeriod v="don&amp;apos;t generate code" />
-            <SetPeriodUS v="don&amp;apos;t generate code" />
-            <SetPeriodMS v="don&amp;apos;t generate code" />
-            <SetPeriodSec v="don&amp;apos;t generate code" />
-            <SetPeriodReal v="don&amp;apos;t generate code" />
-            <SetFrequencyHz v="don&amp;apos;t generate code" />
-            <SetFrequencykHz v="don&amp;apos;t generate code" />
-            <SetFrequencyMHz v="don&amp;apos;t generate code" />
-            <SetOperationMode v="don&amp;apos;t generate code" />
-            <GetDriverState v="don&amp;apos;t generate code" />
-          </Methods>
-          <Events>
-            <Event_module_name v="Events" />
-            <event name="OnInterrupt" v="generate code">
-              <Event_procedure_name v="TimerIntLdd1_OnInterrupt" />
-            </event>
-          </Events>
-        </inhrbean>
+      <Component_name v="BBA1" />
+      <Version v="1.0" />
+      <Compiler v="GNU C Compiler" />
+      <group name="Settings">
+        <group name="RTOS adaptor">
+          <group name="Critical section">
+            <boolgroup name="User function for entering critical section" v="no" />
+            <boolgroup name="User function for exiting critical section" v="no" />
+          </group>
+        </group>
       </group>
     </Properties>
     <Methods>
-      <Enable v="don&amp;apos;t generate code" />
-      <Disable v="don&amp;apos;t generate code" />
-      <EnableEvent v="don&amp;apos;t generate code" />
-      <DisableEvent v="don&amp;apos;t generate code" />
-      <SetPeriodMode v="don&amp;apos;t generate code" />
-      <SetPeriodTicks16 v="don&amp;apos;t generate code" />
-      <SetPeriodTicks32 v="don&amp;apos;t generate code" />
-      <SetPeriodUS v="don&amp;apos;t generate code" />
-      <SetPeriodMS v="don&amp;apos;t generate code" />
-      <SetPeriodSec v="don&amp;apos;t generate code" />
-      <SetPeriodReal v="don&amp;apos;t generate code" />
-      <SetFreqHz v="don&amp;apos;t generate code" />
-      <SetFreqkHz v="don&amp;apos;t generate code" />
-      <SetFreqMHz v="don&amp;apos;t generate code" />
+      <EmptySection_DummyValue />
     </Methods>
     <Events>
-      <Event_module_name v="Events" />
-      <event name="BeforeNewSpeed" v="don&amp;apos;t generate code" />
-      <event name="AfterNewSpeed" v="don&amp;apos;t generate code" />
-      <event name="OnInterrupt" v="generate code">
-        <Event_procedure_name v="TI1_OnInterrupt" />
-        <Priority v="same as interrupt" />
-      </event>
-    </Events>
-  </Bean>
-  <Bean name="TU1" type="TimerUnit_LDD">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="TU1" />
-      <Module_name v="LPTMR0" />
-      <Counter v="LPTMR0_CNR" />
-      <Counter_direction v="Up" />
-      <Counter_width v="16 bits" />
-      <Value_type v="uint16_t" />
-      <enumgroup name="Input clock source" v="Internal">
-        <Counter_frequency v="Auto select" />
-      </enumgroup>
-      <enumgroup name="Counter restart" v="On-match">
-        <Period_device v="LPTMR0_CMR" />
-        <Period v="1 sec" />
-        <boolgroup name="Interrupt" v="Enabled">
-          <Interrupt v="INT_LPTimer" />
-          <Interrupt_priority v="medium priority" />
-        </boolgroup>
-      </enumgroup>
-      <list name="Channel list" v="0">
-        <EmptySection_DummyValue />
-      </list>
-      <group name="Initialization">
-        <Enabled_in_init__code v="yes" />
-        <list name="Auto Initialization" v="1">
-          <Auto_initialization v="no" />
-        </list>
-        <group name="Event mask">
-          <OnCounterRestart v="Enabled" />
-          <OnChannel0 v="Disabled" />
-          <OnChannel1 v="Disabled" />
-          <OnChannel2 v="Disabled" />
-          <OnChannel3 v="Disabled" />
-          <OnChannel4 v="Disabled" />
-          <OnChannel5 v="Disabled" />
-          <OnChannel6 v="Disabled" />
-          <OnChannel7 v="Disabled" />
-        </group>
-      </group>
-      <list name="CPU clock/configuration selection (included)" v="1">
-        <group name="CPU clock/configuration selection">
-          <Clock_configuration_0 v="This component enabled" />
-          <Clock_configuration_1 v="This component disabled" />
-          <Clock_configuration_2 v="This component disabled" />
-          <Clock_configuration_3 v="This component disabled" />
-          <Clock_configuration_4 v="This component disabled" />
-          <Clock_configuration_5 v="This component disabled" />
-          <Clock_configuration_6 v="This component disabled" />
-          <Clock_configuration_7 v="This component disabled" />
-        </group>
-      </list>
-    </Properties>
-    <Methods>
-      <Init v="generate code" />
-      <Deinit v="don&amp;apos;t generate code" />
-      <Enable v="don&amp;apos;t generate code" />
-      <Disable v="don&amp;apos;t generate code" />
-      <SetEventMask v="don&amp;apos;t generate code" />
-      <GetEventMask v="don&amp;apos;t generate code" />
-      <GetEventStatus v="don&amp;apos;t generate code" />
-      <SelectInputFrequency v="don&amp;apos;t generate code" />
-      <GetInputFrequencyReal v="don&amp;apos;t generate code" />
-      <GetInputFrequency v="don&amp;apos;t generate code" />
-      <SetPeriodTicks v="don&amp;apos;t generate code" />
-      <GetPeriodTicks v="don&amp;apos;t generate code" />
-      <ResetCounter v="don&amp;apos;t generate code" />
-      <GetCounterValue v="don&amp;apos;t generate code" />
-      <SetOffsetTicks v="don&amp;apos;t generate code" />
-      <GetOffsetTicks v="don&amp;apos;t generate code" />
-      <GetCaptureValue v="don&amp;apos;t generate code" />
-      <SelectOutputAction v="don&amp;apos;t generate code" />
-      <SelectCaptureEdge v="don&amp;apos;t generate code" />
-      <ConnectPin v="don&amp;apos;t generate code" />
-      <SetOperationMode v="don&amp;apos;t generate code" />
-      <GetDriverState v="don&amp;apos;t generate code" />
-    </Methods>
-    <Events>
-      <Event_module_name v="Events" />
-      <event name="OnCounterRestart" v="generate code">
-        <Event_procedure_name v="TU1_OnCounterRestart" />
-      </event>
-      <event name="OnChannel0" v="don&amp;apos;t generate code" />
-      <event name="OnChannel1" v="don&amp;apos;t generate code" />
-      <event name="OnChannel2" v="don&amp;apos;t generate code" />
-      <event name="OnChannel3" v="don&amp;apos;t generate code" />
-      <event name="OnChannel4" v="don&amp;apos;t generate code" />
-      <event name="OnChannel5" v="don&amp;apos;t generate code" />
-      <event name="OnChannel6" v="don&amp;apos;t generate code" />
-      <event name="OnChannel7" v="don&amp;apos;t generate code" />
+      <EmptySection_DummyValue />
     </Events>
   </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>

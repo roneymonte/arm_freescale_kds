@@ -21,6 +21,8 @@ Module "VERDE"     (component FRBD_KL25Z_LEDRGB_GREEN)
                 is not necessary and needn't to be generated.
    - VERDE_Deinit -Deinitializes the device. Switches off the device, frees the device data structure memory, interrupts 
                 vectors, etc.
+   - VERDE_NegVal -Negates (inverts) the output value. It is equivalent to the [PutVal(!GetVal())]. This method is available 
+                only if the direction = _[output]_ or _[input/output]_.
 
 Module "VERMELHO"  (component FRBD_KL25Z_LEDRGB_RED)
    - VERMELHO_Init -Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and 
@@ -32,14 +34,7 @@ Module "VERMELHO"  (component FRBD_KL25Z_LEDRGB_RED)
    - VERMELHO_NegVal -Negates (inverts) the output value. It is equivalent to the [PutVal(!GetVal())]. This method is available 
                 only if the direction = _[output]_ or _[input/output]_.
 
-Module "TI1"       (component TimerInt)
-
-Module "TU1"       (component TimerUnit_LDD)
-   - TU1_Init -Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets 
-                interrupt priority, sets pin routing, sets timing, etc. If the property <"Enable in init. code"> is set to 
-                "yes" value then the device is also enabled (see the description of the <Enable> method). In this case the 
-                <Enable> method is not necessary and needn't to be generated. This method can be called only once. Before the 
-                second call of Init the <Deinit> must be called first.
+Module "BBA1"      (component Bareboard)
 
 Module "Cpu"       (component MKL25Z128LK4)
 

@@ -7,7 +7,7 @@
 **     Version     : Component 01.025, Driver 01.04, CPU db: 3.00.000
 **     Datasheet   : KL25P80M48SF0RM, Rev.3, Sep 2012
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-09-20, 21:27, # CodeGen: 2
+**     Date/Time   : 2014-09-20, 21:47, # CodeGen: 4
 **     Abstract    :
 **
 **     Settings    :
@@ -59,13 +59,11 @@
 
 /* MODULE Cpu. */
 
-/* {Default RTOS Adapter} No RTOS includes */
+/* {Bareboard RTOS Adapter} No RTOS includes */
 #include "AZUL.h"
 #include "VERDE.h"
 #include "VERMELHO.h"
-#include "TI1.h"
-#include "TimerIntLdd1.h"
-#include "TU1.h"
+#include "BBA1.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -135,14 +133,12 @@ void __init_hardware(void)
   SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK |
                SIM_SCGC5_PORTB_MASK |
                SIM_SCGC5_PORTA_MASK;   /* Enable clock gate for ports to enable pin routing */
-  /* SIM_SCGC5: LPTMR=1 */
-  SIM_SCGC5 |= SIM_SCGC5_LPTMR_MASK;
   if ((PMC_REGSC & PMC_REGSC_ACKISO_MASK) != 0x0U) {
     /* PMC_REGSC: ACKISO=1 */
     PMC_REGSC |= PMC_REGSC_ACKISO_MASK; /* Release IO pads after wakeup from VLLS mode. */
   }
-  /* SIM_CLKDIV1: OUTDIV1=0x0F,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,OUTDIV4=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0 */
-  SIM_CLKDIV1 = (SIM_CLKDIV1_OUTDIV1(0x0F) | SIM_CLKDIV1_OUTDIV4(0x00)); /* Update system prescalers */
+  /* SIM_CLKDIV1: OUTDIV1=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,OUTDIV4=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0 */
+  SIM_CLKDIV1 = (SIM_CLKDIV1_OUTDIV1(0x00) | SIM_CLKDIV1_OUTDIV4(0x00)); /* Update system prescalers */
   /* SIM_SOPT2: PLLFLLSEL=0 */
   SIM_SOPT2 &= (uint32_t)~(uint32_t)(SIM_SOPT2_PLLFLLSEL_MASK); /* Select FLL as a clock source for various peripherals */
   /* SIM_SOPT1: OSC32KSEL=3 */
@@ -154,8 +150,11 @@ void __init_hardware(void)
                SIM_SOPT2_TPMSRC(0x01)
               ));                      /* Set the TPM clock */
   /* Switch to FEI Mode */
-  /* MCG_C1: CLKS=0,FRDIV=0,IREFS=1,IRCLKEN=0,IREFSTEN=0 */
-  MCG_C1 = (MCG_C1_CLKS(0x00) | MCG_C1_FRDIV(0x00) | MCG_C1_IREFS_MASK);
+  /* MCG_C1: CLKS=0,FRDIV=0,IREFS=1,IRCLKEN=1,IREFSTEN=0 */
+  MCG_C1 = MCG_C1_CLKS(0x00) |
+           MCG_C1_FRDIV(0x00) |
+           MCG_C1_IREFS_MASK |
+           MCG_C1_IRCLKEN_MASK;
   /* MCG_C2: LOCRE0=0,??=0,RANGE0=0,HGO0=0,EREFS0=0,LP=0,IRCS=0 */
   MCG_C2 = MCG_C2_RANGE0(0x00);
   /* MCG_C4: DMX32=0,DRST_DRS=0 */
@@ -249,9 +248,6 @@ void PE_low_level_init(void)
   (void)VERDE_Init(NULL);
   /* ### BitIO_LDD "VERMELHO" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)VERMELHO_Init(NULL);
-  /* ### TimerInt_LDD "TimerIntLdd1" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
-  (void)TimerIntLdd1_Init(NULL);
-  /* ### TimerInt "TI1" init code ... */
   __EI();
 }
   /* Flash configuration field */

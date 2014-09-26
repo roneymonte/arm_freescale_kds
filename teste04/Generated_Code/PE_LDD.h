@@ -5,7 +5,7 @@
 **     Processor   : MKL25Z128VLK4
 **     Version     : Component 01.025, Driver 01.04, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-09-20, 21:27, # CodeGen: 2
+**     Date/Time   : 2014-09-20, 21:47, # CodeGen: 4
 **     Abstract    :
 **
 **     Settings    :
@@ -63,9 +63,7 @@
 #include "AZUL.h"
 #include "VERDE.h"
 #include "VERMELHO.h"
-#include "TI1.h"
-#include "TimerIntLdd1.h"
-#include "TU1.h"
+#include "BBA1.h"
 
 
 /*

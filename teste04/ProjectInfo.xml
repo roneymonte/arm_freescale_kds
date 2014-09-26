@@ -57,9 +57,6 @@
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Bit3.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Cpu.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\PE_LDD.c</PathName>
-      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TI1.c</PathName>
-      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TU1.c</PathName>
-      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TimerIntLdd1.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\VERDE.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\VERMELHO.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\Vectors.c</PathName>
@@ -79,9 +76,6 @@
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\PE_Error.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\PE_LDD.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\PE_Types.h</PathName>
-      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TI1.h</PathName>
-      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TU1.h</PathName>
-      <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\TimerIntLdd1.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\VERDE.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Generated_Code\VERMELHO.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste04\Sources\Events.h</PathName>

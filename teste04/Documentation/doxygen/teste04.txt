@@ -31,8 +31,6 @@
 - \subpage AZUL
 - \subpage VERDE
 - \subpage VERMELHO
-- \subpage TU1
-- \subpage TimerIntLdd1
 
 
 */
