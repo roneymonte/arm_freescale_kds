@@ -37,6 +37,7 @@
 - \subpage BitIoLdd3
 - \subpage TU1
 - \subpage TimerIntLdd1
+- \subpage AS1
 
 
 */
@@ -90,6 +91,7 @@
 - \subpage BitIoLdd3
 - \subpage TU1
 - \subpage TimerIntLdd1
+- \subpage AS1
 
 
 */

@@ -5,7 +5,7 @@
 **     Processor   : MK64FN1M0VLL12
 **     Version     : Component 01.045, Driver 01.00, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-09-27, 18:35, # CodeGen: 1
+**     Date/Time   : 2014-09-27, 18:55, # CodeGen: 7
 **
 **     Copyright : 1997 - 2014 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -62,7 +62,8 @@
 ** Array of initialized device structures of LDD components.
 ** ===========================================================================
 */
-LDD_TDeviceData *PE_LDD_DeviceDataList[5] = {
+LDD_TDeviceData *PE_LDD_DeviceDataList[6] = {
+    NULL,
     NULL,
     NULL,
     NULL,
@@ -195,6 +196,8 @@ bool PE_PeripheralUsed(uint32_t PrphBaseAddress)
     case 0x400FF040UL:
     /* Base address allocated by peripheral(s) LPTMR0 */
     case 0x40040000UL:
+    /* Base address allocated by peripheral(s) UART0 */
+    case 0x4006A000UL:
       result = TRUE;
       break;
     default:
@@ -224,6 +227,10 @@ void LDD_SetClockConfiguration(LDD_TClockConfiguration ClockConfiguration)
   /* Component TimerIntLdd1 (TimerInt_LDD). */
   if (PE_LDD_DeviceDataList[PE_LDD_COMPONENT_TimerIntLdd1_ID] != NULL) {
     TimerIntLdd1_SetClockConfiguration(PE_LDD_DeviceDataList[PE_LDD_COMPONENT_TimerIntLdd1_ID], ClockConfiguration);
+  }
+  /* Component AS1 (Serial_LDD). */
+  if (PE_LDD_DeviceDataList[PE_LDD_COMPONENT_AS1_ID] != NULL) {
+    AS1_SetClockConfiguration(PE_LDD_DeviceDataList[PE_LDD_COMPONENT_AS1_ID], ClockConfiguration);
   }
 }
 

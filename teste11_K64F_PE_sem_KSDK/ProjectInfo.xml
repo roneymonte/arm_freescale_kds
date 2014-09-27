@@ -52,6 +52,7 @@
   </PATHS>
   <FILES>
     <GeneratedCs>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\AS1.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd1.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd2.c</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd3.c</PathName>
@@ -76,6 +77,7 @@
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Sources\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\AS1.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd1.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd2.h</PathName>
       <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd3.h</PathName>

@@ -63,6 +63,54 @@ void TI1_OnInterrupt(void)
 	LED_VERD_Off();
 	LED_AZUL_Off();
 	LED_VERM_Off();
+
+	AS1_SendBlock(NULL, "Serial.", 8);
+}
+
+/*
+** ===================================================================
+**     Event       :  AS1_OnBlockReceived (module Events)
+**
+**     Component   :  AS1 [Serial_LDD]
+*/
+/*!
+**     @brief
+**         This event is called when the requested number of data is
+**         moved to the input buffer.
+**     @param
+**         UserDataPtr     - Pointer to the user or
+**                           RTOS specific data. This pointer is passed
+**                           as the parameter of Init method.
+*/
+/* ===================================================================*/
+void AS1_OnBlockReceived(LDD_TUserData *UserDataPtr)
+{
+	/* Write your code here ... */
+	char *TEXTO[40];
+	sprintf (TEXTO, "Recbido %s\n\r", UserDataPtr );
+	AS1_SendBlock(NULL, TEXTO, sizeof(TEXTO));
+    LED_VERD_On();WAIT1_Waitms(200);LED_VERD_Off();
+}
+
+/*
+** ===================================================================
+**     Event       :  AS1_OnBlockSent (module Events)
+**
+**     Component   :  AS1 [Serial_LDD]
+*/
+/*!
+**     @brief
+**         This event is called after the last character from the
+**         output buffer is moved to the transmitter. 
+**     @param
+**         UserDataPtr     - Pointer to the user or
+**                           RTOS specific data. This pointer is passed
+**                           as the parameter of Init method.
+*/
+/* ===================================================================*/
+void AS1_OnBlockSent(LDD_TUserData *UserDataPtr)
+{
+  /* Write your code here ... */
 }
 
 /* END Events */

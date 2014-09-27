@@ -7,7 +7,7 @@
 **     Version     : Component 01.045, Driver 01.00, CPU db: 3.00.000
 **     Datasheet   : K64P144M120SF5RM, Rev.2, January 2014
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2014-09-27, 18:35, # CodeGen: 1
+**     Date/Time   : 2014-09-27, 18:55, # CodeGen: 7
 **     Abstract    :
 **
 **     Settings    :
@@ -502,6 +502,8 @@ void Components_Init(void)
   /* ### TimerInt_LDD "TimerIntLdd1" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)TimerIntLdd1_Init(NULL);
   /* ### TimerInt "TI1" init code ... */
+  /* ### Serial_LDD "AS1" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)AS1_Init(NULL);
 }
 #endif /* CPU_COMPONENTS_INIT */
 
