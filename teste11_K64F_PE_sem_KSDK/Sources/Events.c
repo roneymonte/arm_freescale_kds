@@ -41,20 +41,28 @@ extern "C" {
 
 /*
 ** ===================================================================
-**     Event       :  Cpu_OnNMI (module Events)
+**     Event       :  TI1_OnInterrupt (module Events)
 **
-**     Component   :  Cpu [MK64FN1M0LL12]
+**     Component   :  TI1 [TimerInt]
+**     Description :
+**         When a timer interrupt occurs this event is called (only
+**         when the component is enabled - <Enable> and the events are
+**         enabled - <EnableEvent>). This event is enabled only if a
+**         <interrupt service/event> is enabled.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
 */
-/*!
-**     @brief
-**         This event is called when the Non maskable interrupt had
-**         occurred. This event is automatically enabled when the [NMI
-**         interrupt] property is set to 'Enabled'.
-*/
-/* ===================================================================*/
-void Cpu_OnNMI(void)
+void TI1_OnInterrupt(void)
 {
   /* Write your code here ... */
+	LED_VERD_Neg();WAIT1_Waitms(333);
+	LED_AZUL_Neg();WAIT1_Waitms(333);
+	LED_VERM_Neg();WAIT1_Waitms(333);
+
+	LED_VERD_Off();
+	LED_AZUL_Off();
+	LED_VERM_Off();
 }
 
 /* END Events */

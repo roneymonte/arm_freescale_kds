@@ -44,6 +44,10 @@
 #include "LED_VERM.h"
 #include "LEDpin3.h"
 #include "BitIoLdd3.h"
+#include "TI1.h"
+#include "TimerIntLdd1.h"
+#include "TU1.h"
+#include "WAIT1.h"
 
 
 #ifdef __cplusplus
@@ -52,19 +56,19 @@ extern "C" {
 
 /*
 ** ===================================================================
-**     Event       :  Cpu_OnNMI (module Events)
+**     Event       :  TI1_OnInterrupt (module Events)
 **
-**     Component   :  Cpu [MK64FN1M0LL12]
+**     Component   :  TI1 [TimerInt]
+**     Description :
+**         When a timer interrupt occurs this event is called (only
+**         when the component is enabled - <Enable> and the events are
+**         enabled - <EnableEvent>). This event is enabled only if a
+**         <interrupt service/event> is enabled.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
 */
-/*!
-**     @brief
-**         This event is called when the Non maskable interrupt had
-**         occurred. This event is automatically enabled when the [NMI
-**         interrupt] property is set to 'Enabled'.
-*/
-/* ===================================================================*/
-void Cpu_OnNMI(void);
-
+void TI1_OnInterrupt(void);
 
 /* END Events */
 

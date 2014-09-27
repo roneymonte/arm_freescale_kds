@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>teste11_K64F_PE_sem_KSDK</name>
+	<name>HelloWorld_K64F_teste11_PE</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -31,21 +31,6 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
-		<link>
-			<name>External_Modules</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>External_Modules/pex.css</name>
-			<type>1</type>
-			<location>C:/Users/roney/workspace.kds/teste11_K64F_PE_sem_KSDK/Documentation/doxygen/pex.css</location>
-		</link>
-		<link>
-			<name>External_Modules/startup.c</name>
-			<type>1</type>
-			<location>C:/Users/roney/workspace.kds/teste11_K64F_PE_sem_KSDK/Project_Settings/Startup_Code/startup.c</location>
-		</link>
 		<link>
 			<name>Generated_Code/IO_Map/MK64F12.h</name>
 			<type>1</type>

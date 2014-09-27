@@ -35,58 +35,61 @@
     <FLASHsize>1M</FLASHsize>
   </PROCESSOR>
   <PATHS>
-    <LinkerCommandFile>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Project_Settings\Linker_Files\ProcessorExpert.ld</LinkerCommandFile>
+    <LinkerCommandFile>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Project_Settings\Linker_Files\ProcessorExpert.ld</LinkerCommandFile>
     <IncludePaths>
       <Path>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd2\MK64FN1M0LL12\system\</Path>
       <Path>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\</Path>
       <Path>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\iofiles\</Path>
-      <Path>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Sources\</Path>
-      <Path>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\</Path>
+      <Path>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Sources\</Path>
+      <Path>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\</Path>
     </IncludePaths>
     <SourceCodePaths>
-      <Path>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\</Path>
+      <Path>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\</Path>
       <Path>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd2\MK64FN1M0LL12\system\</Path>
-      <Path>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Project_Settings\Startup_Code\</Path>
-      <Path>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Sources\</Path>
+      <Path>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Project_Settings\Startup_Code\</Path>
+      <Path>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Sources\</Path>
     </SourceCodePaths>
   </PATHS>
   <FILES>
     <GeneratedCs>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd1.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd2.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd3.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\Cpu.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_AZUL.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_VERD.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_VERM.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin1.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin2.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin3.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\PE_LDD.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd2.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd3.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\Cpu.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_AZUL.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_VERD.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_VERM.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin2.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin3.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\PE_LDD.c</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd2\MK64FN1M0LL12\system\CPU_Init.c</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd2\MK64FN1M0LL12\system\Peripherals_Init.c</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd2\MK64FN1M0LL12\system\Vectors.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\WAIT1.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\pin_mux.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Project_Settings\Startup_Code\startup.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Sources\Events.c</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Sources\main.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\TI1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\TU1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\TimerIntLdd1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\WAIT1.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\pin_mux.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Project_Settings\Startup_Code\startup.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Sources\Events.c</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Sources\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd1.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd2.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd3.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\CPU_Config.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\Cpu.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd2.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\BitIoLdd3.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\CPU_Config.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\Cpu.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\iofiles\MK64F12.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\IO_Map.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\Init_Config.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_AZUL.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_VERD.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_VERM.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin1.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin2.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin3.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\IO_Map.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\Init_Config.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_AZUL.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_VERD.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LED_VERM.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin2.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\LEDpin3.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\ADC_PDD.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\CAN_PDD.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\CMP_PDD.h</PathName>
@@ -125,17 +128,20 @@
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\USB_PDD.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\VREF_PDD.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd\inc\WDOG_PDD.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\PE_Const.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\PE_Error.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\PE_LDD.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\PE_Types.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\PE_Const.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\PE_Error.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\PE_LDD.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\PE_Types.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd2\MK64FN1M0LL12\system\CPU_Init.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd2\MK64FN1M0LL12\system\PDD_Includes.h</PathName>
       <PathName>C:\Freescale\KDS_1.1.1\eclipse\ProcessorExpert\lib\Kinetis\pdd2\MK64FN1M0LL12\system\Peripherals_Init.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\Vectors_Config.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\WAIT1.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Generated_Code\pin_mux.h</PathName>
-      <PathName>C:\Users\roney\workspace.kds\teste11_K64F_PE_sem_KSDK\Sources\Events.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\TI1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\TU1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\TimerIntLdd1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\Vectors_Config.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\WAIT1.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Generated_Code\pin_mux.h</PathName>
+      <PathName>C:\Users\roney\git\arm_freescale_kds\teste11_K64F_PE_sem_KSDK\Sources\Events.h</PathName>
     </GeneratedHs>
   </FILES>
   <OPTIONS>
