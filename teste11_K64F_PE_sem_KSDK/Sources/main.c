@@ -40,7 +40,7 @@
 #include "LED_VERM.h"
 #include "LEDpin3.h"
 #include "BitIoLdd3.h"
-#include "WAIT1.h"
+
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -62,6 +62,7 @@ int main(void)
 
   /* Write your code here */
   /* For example: for(;;) { } */
+
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
