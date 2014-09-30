@@ -9,10 +9,9 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include Static_Code/System/subdir.mk
--include Static_Code/Peripherals/subdir.mk
 -include Sources/subdir.mk
--include Project_Settings/Startup_Code/subdir.mk
 -include Generated_Code/subdir.mk
+-include External_Modules/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -54,7 +53,7 @@ all: RGB_Switch\ Interrupt-K64.elf secondary-outputs
 RGB_Switch\ Interrupt-K64.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/brao/Desktop/e14 blogs/K64F using KDS/RGB_Switch Interrupt-K64/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/brao/Desktop/e14 blogs/K64F using KDS/RGB_Switch Interrupt-K64/Project_Settings/Linker_Files" -Wl,-Map,"RGB_Switch Interrupt-K64.map" -o "RGB_Switch Interrupt-K64.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/roney/git/arm_freescale_kds/RGB_Switch Interrupt-K64/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/roney/git/arm_freescale_kds/RGB_Switch Interrupt-K64/Project_Settings/Linker_Files" -Wl,-Map,"RGB_Switch Interrupt-K64.map" -o "RGB_Switch Interrupt-K64.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
